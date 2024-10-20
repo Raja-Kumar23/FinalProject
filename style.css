@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 20px;
+  z-index: 1000;
+  
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 120px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-left: 10px;
+  padding-right: 35px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+ul li a:hover {
+  color: #ff6347;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ 
+  padding: 70px 20px;
+  min-height: 100vh;
+    background: linear-gradient(to right, #5f7aad, #74958d);
+  
+  
+  
+}
+
+.intro {
+  margin-top: 120px;
+  flex: 1;
+  padding-left: 80px;
+}
+
+.welcome {
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6347;
+  filter: drop-shadow(0 4px 20px rgba(179, 55, 3, 0.5));
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: medium;
+  margin: 20px 0;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 2.5rem;
+}
+
+button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #f1826f;
+  filter: drop-shadow(0 4px 20px rgba(179, 55, 3, 0.5));
+}
+
+.png {
+  margin-top: 120px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  position: relative;
+}
+
+.png img {
+  width: 65%;
+  max-width: 500px;
+  height: auto;
+  padding-right: 15px;
+  margin-right: 100px;
+  margin-top: -30px;
+  filter: drop-shadow(0 4px 20px rgba(128, 41, 14, 0.5));
+}
+
+.space {
+  height: 50px;
+}
+
+
+.title {
+  padding-top: 10px;
+  padding-left: 50px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 60px;
+  color: rgb(236, 94, 94);
+}
+
+.click {
+  padding-left: 50px;
+  color: #ecc505;
+}
+
+.logo-container {
+  padding-top: 120px;
+  height: 230vh;
+  /* background-color: blue; */
+  }
+
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  
+}
+
+.logo img {
+  padding-top: 90px;
+  padding-right: 70px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.logo a img {
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.logo a img:hover {
+  transform: scale(1.1); 
+  opacity: 0.9; 
+}
+.logo-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin: 5px;
+  
+}
+.logo-item p {
+  font-size: 24px;
+  color: white;
+  margin-top: 20px; 
+  font-family: Arial, sans-serif;
+  text-align: center; 
+  
+}
+.go-top {
+  position: fixed;
+  bottom: 30px; /* Distance from the bottom */
+  right: 30px;  /* Distance from the right */
+  background-color: #ff6347; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 50%;
+  width: 40px;  /* Width of the icon */
+  height: 40px; /* Height of the icon */
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Icon size */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.go-top:hover {
+  background-color: #f1826f; /* Hover color */
+}
+
+
